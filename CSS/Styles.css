@@ -1,0 +1,255 @@
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background-color: #d3e0ff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.logo-container {
+    position: absolute;
+    left: 20px;
+}
+
+.company-logo {
+    height: 50px;
+    width: auto;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Tabs container */
+.tabs-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 20px 0;
+}
+
+/* Box around tabs */
+.tabs-box {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 700px;
+}
+
+/* Style the tabs */
+.tabs {
+    display: flex;
+    border-bottom: 2px solid #d3e0ff;
+    justify-content: space-around;
+}
+
+.tablinks {
+    background-color: #f0f8ff;
+    border: 1px solid #d3e0ff;
+    border-bottom: none;
+    padding: 15px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px 5px 0 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tablinks i {
+    font-size: 28px;
+    margin-bottom: 5px;
+    color: #007bff;
+}
+
+.tablinks span {
+    display: block;
+    font-weight: 500;
+    color: #007bff;
+}
+
+.tablinks:hover, .tablinks.active {
+    background-color: #e6f2ff;
+    color: #0056b3;
+}
+
+.tablinks.active {
+    background-color: #d3e0ff;
+    border-bottom: 2px solid #d3e0ff;
+    color: #333;
+}
+
+/* Tab content */
+.tabcontent {
+    display: none;
+    padding: 20px;
+    border: 1px solid #d3e0ff;
+    border-top: none;
+    width: 700px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.tabcontent.active {
+    display: block;
+}
+
+/* Content wrapper */
+.image-background {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Text highlight */
+.content-text-highlight {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+    color: #fff;
+    text-align: center;
+    max-width: 80%;
+}
+
+.content-text-left {
+    text-align: left;
+}
+
+.content-text-justify {
+    text-align: justify;
+}
+
+.tabcontent h3 {
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.tabcontent p {
+    line-height: 1.6;
+    color: #ddd;
+}
+
+/* Employee Stories */
+#employee-stories {
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+#employee-stories h2 {
+    margin-bottom: 40px;
+    font-weight: 700;
+    color: #0056b3;
+}
+
+.employee-story {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.story-left {
+    float: left;
+}
+
+.story-right {
+    float: right;
+}
+
+.story-box {
+    background-color: #ffffff;
+    border: 2px solid #d3e0ff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.story-box img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.story-box p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Open Positions */
+#open-positions {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #d3e0ff;
+    margin: 40px 20px 20px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.department h3 {
+    margin-bottom: 10px;
+    color: #0056b3;
+    font-weight: 700;
+}
+
+.department ul {
+    list-style: none;
+    padding: 0;
+}
+
+.department ul li {
+    margin-bottom: 5px;
+}
+
+.department ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.department ul li a:hover {
+    text-decoration: underline;
+}
